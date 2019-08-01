@@ -1,0 +1,102 @@
+#tpl_model input.form-control, #tpl_model select.form-control, #tpl_model textarea.form-control {
+    width: 66%;
+    vertical-align: middle;
+    display: inline-block;
+    height: 35px;
+}
+
+#tpl_model .tpl_div label.form-label {
+    vertical-align: middle;
+    width: 30%;
+}
+
+#tpl_model .label_hidden label.label_hidden {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    /*#tpl_model .tpl_div.col-sm-12 label.form-label {*/
+    /*width: 15%;*/
+    /*}*/
+    #tpl_model .tpl_div.col-sm-12 label.form-label {
+        width: 14.5%;
+    }
+
+    #tpl_model .col-sm-12 input.form-control, #tpl_model .col-sm-12 select.form-control, #tpl_model .col-sm-12 textarea.form-control {
+        width: 81.5%;
+    }
+
+    #tpl_model .label_hidden input.form-control, #tpl_model .label_hidden select.form-control, #tpl_model .label_hidden textarea.form-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #tpl_model .field_type_div {
+        display: none;
+    }
+
+    #tpl_model .field_type_text.label_hidden label.label_hidden,
+    #tpl_model .field_type_date.label_hidden label.label_hidden {
+        display: inline-block !important;
+    }
+}
+
+#title {
+    width: 95%;
+}
+
+#tpl_model.input_required_no_show .input_required .form-commit,
+#tpl_model.input_required_no_show .input_required .file-preview,
+#title.input_required.input_required_no_show {
+    border-color: #e83e8c !important
+}
+
+#tpl_model.input_required_no_show .input_required .span-form-commit {
+    color: #e83e8c !important
+}
+
+#tpl_model .preview-div {
+    max-width: 160px;
+    max-height: 160px;
+}
+
+#tpl_model .preview-div img {
+    width: 160px;
+    height: 135px;
+}
+
+#tpl_model .none_edit_able .file-input-ajax-new,
+#tpl_model .none_edit_able .preview-div .preview-fileinput-remove {
+    display: none;
+}
+
+#tpl_model .form-group-sp {
+    margin-bottom: 3px;
+}
+
+.file-footer-buttons .kv-file-upload {
+    display: none;
+}
+
+.table_row {
+    width: 100%;
+}
+
+.table_row th {
+    font: bold 100% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border: 1px solid #C1DAD7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px 6px 6px 12px;
+    background: #CAE8EA no-repeat;
+}
+
+.table_row td {
+    border: 1px solid #C1DAD7;
+    font-size: 100%;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+}

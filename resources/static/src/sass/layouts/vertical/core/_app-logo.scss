@@ -1,0 +1,93 @@
+.aside-toolbar {
+	height: 65px;
+	position: relative;
+	.header-controls {
+		position: absolute;
+		right: 0;
+		width: rem(50);
+		height: rem(65);
+		line-height: 4;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		.btn-menu {
+			padding: 12px 17px 6px 11px;
+
+			i {
+				font-size: rem(18);
+			}
+		}
+	}
+}
+//Logo Desktop
+.site-logo {
+	height: rem(65);
+	width: inherit;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	float: left;
+	list-style: none;
+
+	li {
+		display: inline-block;
+
+		.logo {
+			position: absolute;
+			top: 25px;
+			left: 18px;
+
+			svg {
+				width: 23px;
+				height: 23px;
+			}
+		}
+
+		.brand-text {
+			font-size: rem(18);
+			font-family: $font-family-logo;
+			padding: 26px 0 0 51px;
+			font-weight: 300;
+		}
+	}
+
+	li.app_menu-close {
+		float: right;
+		display: none;
+		padding: rem(19) rem(20);
+
+		a {
+			i {
+				font-size: rem(30);
+				color: #fff;
+			}
+		}
+	}
+}
+
+//Logo Tablet/Mobile
+.site-logo{
+	li {
+		display: inline-block;
+
+		.logo_mobile {
+			position: absolute;
+			top: 21px;
+	    left: -2px;
+
+			#logo_mobile{
+				width: 27px;
+				height: 27px;
+			}
+		}
+
+		.brand-text {
+			font-size: rem(18);
+			font-family: $font-family-logo;
+			padding: 23px 0 0 51px;
+			font-weight: 300;
+			display: block;
+		}
+	}
+}

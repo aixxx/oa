@@ -1,0 +1,33 @@
+#OA项目初次配置
+
+##后端相关配置
+
+代码拉下来之后，进入到项目目录
+
+在本地的mysql创建对应的数据库
+
+配置.env文件中的数据库配置
+
+安装项目需要的库：composer install
+
+生成项目的key：php artisan key:generate
+
+填充数据：
+首次安装：php artisan migrate --seed，
+二次安装（会移除原有的角色和权限的对应关系和权限）：
+php artisan db:seed --class=AbilitiesTableSeeder
+php artisan db:seed --class=RolesTableSeeder
+
+## 前端相关
+
+前端样式文件放在 /resources/static/src/ 目录，首先安装 gulp (npm install -g gulp)
+
+修改 SCSS 目录下样式文件完毕后，执行 gulp 命令编译，编译后的 css 文件会有很多个，放在 /public/static/css/
+
+最后在根目录执行 
+
+```bash
+$ npm run prod
+```
+
+合并成为最终的 screen.css 文件
